@@ -6,91 +6,96 @@
   <title>A Brief History of the Internet's Evolution and the World Wide Web</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 50PX;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 50px; /* Corrected padding value to lowercase 'px' */
     }
     header {
-      background-image: url('www.jpg');
-      background-color: #333;
-      height: 100px;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+        background-image: url('www.jpg');
+        background-color: #333;
+        height: 100px;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
     }
     nav {
-      background-color: #444;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
+        background-color: #444;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
     }
     section {
-      padding: 120px 20px 20px;
+        padding: 120px 20px 20px;
     }
     h2 {
-      color: #333;
+        color: #333;
     }
     p {
-      line-height: 2.5;
-      word-wrap: break-word;
-      text-indent: 50px; 
+        line-height: 2.5;
+        word-wrap: break-word;
+        text-indent: 50px; /* Corrected indentation value to lowercase 'px' */
     }
     img {
-      object-position: center;
-      width: 850px;
-      height: 500px;
+        object-position: center;
+        width: 850px;
+        height: 500px;
     }
     .image-container {
         display: flex;
         justify-content: center;
     }
-    
-    
     span {
-      font-style: italic;
+        font-style: italic;
     }
-
     div {
-      background-color: white;
-      padding: 10px;
-      margin-bottom: 20px;
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 20px;
     }
-
     /* New styles for tables */
     table {
-      width: 100%;
-      border-collapse: collapse;
+        width: 100%;
+        border-collapse: collapse;
     }
-
     th, td {
-      padding: 8px;
-      border-bottom: 1px solid #ddd;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
     }
-
     th {
-      background-color: #f2f2f2;
+        background-color: #f2f2f2;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .item {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
     }
 
-    .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
+    /* Make table responsive */
+    @media (max-width: 600px) {
+        table, th, td {
+            display: block;
+        }
+        th, td {
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    }
+</style>
 
-  .item {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-
-  </style>
 </head>
 <body>
   <header>
@@ -187,6 +192,47 @@
       technologies and services, such as software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS), 
       which provide scalable and flexible solutions for businesses and consumers. The adoption of cloud computing has also led to the rise of 
       remote work, as employees can access work-related applications and data from anywhere with an internet connection.</p>
+  </section>
+  <section id="social-media">
+      <h2>Social Media & Online Communities</h2>
+      <table>
+          <tr>
+              <th>Platform</th>
+              <th>Year Launched</th>
+              <th>Founder(s)</th>
+              <th>Current Active Users</th>
+          </tr>
+          <tr>
+              <td>Facebook</td>
+              <td>2004</td>
+              <td>Mark Zuckerberg, Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, Chris Hughes</td>
+              <td>2.8 billion (as of Q3 2021)</td>
+          </tr>
+          <tr>
+              <td>Twitter</td>
+              <td>2006</td>
+              <td>Jack Dorsey, Noah Glass, Biz Stone, Evan Williams</td>
+              <td>330 million (as of Q3 2021)</td>
+          </tr>
+          <tr>
+              <td>LinkedIn</td>
+              <td>2003</td>
+              <td>Reid Hoffman, Allen Blue, Konstantin Guericke, Eric Ly, Jean-Luc Vaillant</td>
+              <td>774 million (as of Q3 2021)</td>
+          </tr>
+          <tr>
+              <td>Instagram</td>
+              <td>2010</td>
+              <td>Kevin Systrom, Mike Krieger</td>
+              <td>1.3 billion (as of Q3 2021)</td>
+          </tr>
+          <tr>
+              <td>TikTok</td>
+              <td>2016</td>
+              <td>Zhang Yiming</td>
+              <td>1 billion (as of Q3 2021)</td>
+          </tr>
+      </table>
   </section>
 </body>
 </html>

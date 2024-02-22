@@ -51,6 +51,45 @@
         display: flex;
         justify-content: center;
     }
+    
+    
+    span {
+      font-style: italic;
+    }
+
+    div {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* New styles for tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
   </style>
 </head>
 <body>
@@ -58,17 +97,18 @@
     <h1 align="center">A Brief History of the Internet's Evolution and the World Wide Web</h1>
   </header>
   <nav>
-    <a href="#birth-of-the-internet">The Birth of the Internet</a> |
+    <a href="#birth-of-the-internet">Birth of the Internet</a> |
     <a href="#tcp-ip-protocol-and-expansion">TCP/IP Protocol and Expansion</a> |
-    <a href="#the-world-wide-web">The World Wide Web</a> |
+    <a href="#the-world-wide-web">World Wide Web</a> |
     <a href="#web-2-and-social-media">Web 2.0 and Social Media</a> |
-    <a href="#iot-and-cloud-computing">The Internet of Things (IoT) and Cloud Computing</a> |
-    <a href="#social-media">Social Media and Online Communities</a>
+    <a href="#iot-and-cloud-computing">The Internet of Things and Cloud Computing</a> |
+    <a href="#social-media">Social Media & Online Communities</a>
   </nav>
+  <section id="intro" style="text-align: center;">
+    <iframe width="850" height="500" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allowfullscreen></iframe>
+    <p>Credits to Melih Bilgil and picolsigns in YouTube</p>
+  </section>
   <section id="birth-of-the-internet">
-    <div class="image-container">
-       <img src="birthoftheinternet.JPG">
-    </div>
     <h2>The Birth of the Internet</h2>
     <p>The 1960s and 1970s were a period of rapid technological advancement as researchers and scientists worldwide began to 
       explore the potential of computer networking. The concept of a global network of computers was first proposed by J.C.R. Licklider, 
@@ -83,6 +123,9 @@
       ARPANET proliferated, connecting universities and research institutions across the United States.</p>
   </section>
   <section id="tcp-ip-protocol-and-expansion">
+    <div class="image-container">
+       <img src="birthoftheinternet.JPG">
+    </div>
     <h2>TCP/IP Protocol and Expansion</h2>
     <p>The 1980s was a pivotal decade in the development of the Internet, as the Transmission Control Protocol/Internet Protocol (TCP/IP) 
       emerged as the standard protocol for networking and communication. Developed by Vint Cerf and Bob Kahn, TCP/IP allowed different 
